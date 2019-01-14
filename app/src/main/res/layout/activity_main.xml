@@ -17,7 +17,18 @@
             android:layout_height="wrap_content"
             android:text="Hello World!" />
         <TextView
+            android:id="@+id/hourNow"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <TextView
             android:id="@+id/dateNowMinus1"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="Hello" />
+        <TextView
+            android:id="@+id/hourNowMinus1"
             android:layout_width="385dp"
             android:layout_height="wrap_content"
             android:text="Hello" />
