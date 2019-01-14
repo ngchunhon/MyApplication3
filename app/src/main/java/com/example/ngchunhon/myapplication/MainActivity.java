@@ -26,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
         String strCurrentTime = dateFormat.format(currentTime);
         textDateNow.setText(strCurrentTime);
 
+        TextView textHourNow = (TextView) findViewById(R.id.hourNow);
+        String strCurrentHour = strCurrentTime.substring(11,13);
+        textHourNow.setText(strCurrentHour);
+
+
+
         Date currentTimeMinus1 = new Date(currentTime.getTime() - 1*1000*60*60);
         TextView textDateNowMinus1 = (TextView) findViewById(R.id.dateNowMinus1);
         String strCurrentTimeMinus1 = dateFormat.format(currentTimeMinus1);
         textDateNowMinus1.setText(strCurrentTimeMinus1);
 
-
+        TextView textHourNowMinus1 = (TextView) findViewById(R.id.hourNowMinus1);
+        String strHourNowMinus1 = strCurrentTimeMinus1.substring(11,13);
+        textHourNowMinus1.setText(strHourNowMinus1);
 
 
 
